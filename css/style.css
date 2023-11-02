@@ -29,6 +29,20 @@ dd {
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
 }
 
+.image-bg {
+  background-image: url("../images/illustration-woman-online-desktop.svg"),
+    url("../images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -83.86px top 70.81px, left -576px top -294px;
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  top: 206.12px;
+  left: -93.07px;
+}
+
 .faq {
   padding-top: 4.06rem;
   padding-bottom: 4.06rem;
