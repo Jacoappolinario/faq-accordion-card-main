@@ -64,7 +64,7 @@ dd {
   font-size: 2rem;
   font-weight: 700;
   color: var(--color-2);
-  margin-bottom: 1.62rem;
+  margin-bottom: 1.81rem;
 }
 
 .faq-item {
@@ -118,4 +118,43 @@ dd {
   color: var(--color-6);
   max-width: 50ch;
   margin-top: 0.69rem;
+}
+
+@media (max-width: 400px) {
+  .content {
+    width: 327px;
+    height: 535px;
+    grid-template-columns: 1fr;
+  }
+
+  .image-bg {
+    background-image: url("../images/bg-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 106px;
+  }
+
+  .image {
+    width: 237px;
+    top: -108px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .faq {
+    padding: 1.75rem 1.5rem 3rem;
+  }
+
+  .faq-title {
+    text-align: center;
+    margin-bottom: 1.28rem;
+  }
+
+  .faq-item .question {
+    margin-right: 0px;
+  }
+
+  .faq-item .question button {
+    font-size: 0.8125rem;
+  }
 }
