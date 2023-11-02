@@ -1,7 +1,18 @@
+:root {
+  --font-family: "Kumbh Sans", sans-serif;
+
+  --color-1: #ffffff;
+  --color-2: #1e1f36;
+  --color-3: #e8e8ea;
+  --color-4: #4b4c5f;
+  --color-5: #f47b56;
+  --color-6: #787887;
+}
+
 body {
   margin: 0px;
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--font-family);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -20,7 +31,7 @@ dd {
 }
 
 .content {
-  background: #ffffff;
+  background: var(--color-1);
   width: 920px;
   height: 509px;
   display: grid;
@@ -52,14 +63,14 @@ dd {
 .faq-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #1e1f36;
+  color: var(--color-2);
   margin-bottom: 1.62rem;
 }
 
 .faq-item {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #e8e8ea;
+  border-bottom: 1px solid var(--color-3);
 }
 
 .faq-item .question {
@@ -69,7 +80,7 @@ dd {
 .faq-item .question button {
   font-size: 0.875rem;
   font-weight: 400;
-  color: #4b4c5f;
+  color: var(--color-4);
 
   display: grid;
   grid-template-columns: 1fr auto;
@@ -84,7 +95,7 @@ dd {
 }
 
 .faq-item .question button:hover {
-  color: #f47b56;
+  color: var(--color-5);
 }
 
 .faq-item .question button::after {
@@ -104,7 +115,7 @@ dd {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #787887;
+  color: var(--color-6);
   max-width: 50ch;
   margin-top: 0.69rem;
 }
