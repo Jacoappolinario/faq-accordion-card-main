@@ -14,13 +14,13 @@ img {
 }
 
 h1,
-dd,
-picture {
+dl,
+dd {
   margin: 0px;
 }
 
 .content {
-  background-color: #ffffff;
+  background: #ffffff;
   width: 920px;
   height: 509px;
   display: grid;
@@ -29,26 +29,64 @@ picture {
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
 }
 
-.questions {
-  padding: 4.06rem 5.94rem 5.19rem 0px;
+.faq {
+  padding-top: 4.06rem;
+  padding-bottom: 4.06rem;
+  padding-right: 5.94rem;
 }
 
-.questions h1 {
+.faq-title {
   font-size: 2rem;
   font-weight: 700;
   color: #1e1f36;
-  margin-bottom: 45px;
+  margin-bottom: 1.62rem;
 }
 
-.questions dt {
+.faq-item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e8e8ea;
+}
+
+.faq-item .question {
+  margin-right: 1rem;
+}
+
+.faq-item .question button {
   font-size: 0.875rem;
   font-weight: 400;
   color: #4b4c5f;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  padding: 0px;
 }
 
-.questions dd {
+.faq-item .question button::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 7px;
+  background: url("../images/icon-arrow-down.svg");
+  transition: 0.3s;
+}
+
+.faq-item .question button:hover::after {
+  transform: rotate(180deg);
+}
+
+.faq-item .answer {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.5;
   color: #787887;
+  max-width: 50ch;
+  margin-top: 0.69rem;
 }
