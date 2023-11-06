@@ -111,6 +111,10 @@ dd {
   transform: rotate(180deg);
 }
 
+.faq-item .question button.active {
+  font-weight: 700;
+}
+
 .faq-item .answer {
   font-size: 0.75rem;
   font-weight: 400;
