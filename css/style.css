@@ -120,6 +120,14 @@ dd {
   margin-top: 0.69rem;
 }
 
+.faq-item .answer {
+  display: none;
+}
+
+.faq-item .answer.active {
+  display: block;
+}
+
 @media (max-width: 500px) {
   .content {
     width: 327px;
