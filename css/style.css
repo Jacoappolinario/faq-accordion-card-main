@@ -107,11 +107,12 @@ dd {
   transition: 0.3s;
 }
 
-.faq-item .question button:hover::after {
+.faq-item .question button:hover::after,
+.faq-item .question button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
-.faq-item .question button.active {
+.js .faq-item .question button.active {
   font-weight: 700;
 }
 
@@ -124,11 +125,11 @@ dd {
   margin-top: 0.69rem;
 }
 
-.faq-item .answer {
+.js .faq-item .answer {
   display: none;
 }
 
-.faq-item .answer.active {
+.js .faq-item .answer.active {
   display: block;
 }
 
